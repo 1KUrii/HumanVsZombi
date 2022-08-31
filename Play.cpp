@@ -59,9 +59,6 @@ public:
     int getLevel(){ return m_level; }
 
     bool hasWon() { return m_level >= 20;}
-
-
-
 };
 
 class Monster : public Creature{
@@ -186,7 +183,6 @@ int main(){
 	std::cout << "Welcome, " << p.getName() << "\n";
  
 	std::cout << "You have " << p.getHealth() << " health and are carrying " << p.getGold() << " gold\n";
-
 
 	srand(static_cast<unsigned int>(time(0)));
 	rand();
