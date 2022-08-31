@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
-#include <cstdlib> // для rand() и srand()
-#include <ctime> // для time()
+#include <cstdlib> 
+#include <ctime> 
 
 int getRandomNumber(int min, int max){
 	static const double fraction = 1.0 / (static_cast<double>(RAND_MAX) + 1.0);
@@ -188,8 +188,8 @@ int main(){
 	std::cout << "You have " << p.getHealth() << " health and are carrying " << p.getGold() << " gold\n";
 
 
-	srand(static_cast<unsigned int>(time(0))); // устанавливаем значение системных часов в качестве стартового числа
-	rand(); // сбрасываем первый результат
+	srand(static_cast<unsigned int>(time(0)));
+	rand();
 
     bool flag = true;
     while (flag){
